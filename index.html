@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title></title>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+<body>
+<div class="container">
+	<div ng-controller="myController">
+			{{message}}
+	</div>
+	<div>
+	<!-- it is element level directive -->
+		<my-srikanth-tech-minds>
+		</my-srikanth-tech-minds>
+		<!-- it is attribute level directive -->
+		<div my-srikanth-tech-minds>
+			<h1>This is custom directive</h1> //it is not coming
+		</div>
+		<div class="my-srikanth-tech-minds"></div>
+		<!-- keep write as it is i.e leaving the spaces in betwwn the tags.. -->
+		<!-- directive: my-srikanth-tech-minds  -->
+	</div>
+	<script type="text/javascript" src="https://code.angularjs.org/1.6.4/angular.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
